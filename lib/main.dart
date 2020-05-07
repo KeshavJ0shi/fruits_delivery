@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 25.0, right: 30.0),
+                    padding: const EdgeInsets.only(top: 30, right: 30.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(9.5),
                       child: Image.asset(
