@@ -38,6 +38,32 @@ class MyApp extends StatelessWidget {
                   )
                 ],
               ),
+              Padding(
+                padding: const EdgeInsets.only(top: 40, left: 30, right: 30),
+                child: Container(
+                  height: 150,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: Color(0xFF98DBAF),
+                    boxShadow: <BoxShadow>[],
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Text(
+                            'We picked up a new\nportion of fresh fruits\nfor you!',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
