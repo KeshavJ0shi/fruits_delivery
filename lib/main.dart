@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.only(top: 25,left: 20.0),
+                    padding: const EdgeInsets.only(top: 25.0, left: 30.0),
                     child: Text(
                       "Hello, Raghav!",
                       style: TextStyle(
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 25,right: 30.0),
+                    padding: const EdgeInsets.only(top: 25.0, right: 30.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(9.5),
                       child: Image.asset(
