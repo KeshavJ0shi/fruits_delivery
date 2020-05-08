@@ -113,6 +113,34 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(
+                height:50,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text(
+                    "Week's betsellers",
+                    style: TextStyle(
+                      color: Color(0xFF547D62),
+                      fontSize: 35,
+                    ),
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF98DBAF),
+                      borderRadius: BorderRadius.circular(15)
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
