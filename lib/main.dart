@@ -77,6 +77,32 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                     ),
+                    Positioned(
+                      top: 110,
+                      left: 200,
+                      child: GestureDetector(
+                        onTap: () {
+                          print('2nd Layer Button Tapped');
+                        },
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(50),
+                              topLeft: Radius.circular(50)),
+                          child: Container(
+                            height: 40,
+                            width: 150,
+                            child: Icon(
+                              Icons.arrow_forward,
+                              size: 30,
+                              color: Colors.white,
+                            ),
+                            decoration: BoxDecoration(
+                              color: Color(0xFFCDEED8),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
