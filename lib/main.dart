@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -48,7 +47,14 @@ class MyApp extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
                         color: Color(0xFF98DBAF),
-                        boxShadow: <BoxShadow>[],
+                        boxShadow: <BoxShadow>[
+                          BoxShadow(
+                            blurRadius: 30,
+                            spreadRadius: -10,
+                            color: Color(0xFF98DBAF),
+                            offset: Offset(0, 25),
+                          ),
+                        ],
                       ),
                     ),
                     Positioned(
@@ -86,8 +92,9 @@ class MyApp extends StatelessWidget {
                         },
                         child: ClipRRect(
                           borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(50),
-                              topLeft: Radius.circular(50)),
+                            bottomRight: Radius.circular(50),
+                            topLeft: Radius.circular(50),
+                          ),
                           child: Container(
                             height: 40,
                             width: 150,
