@@ -114,7 +114,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height:50,
+                height: 50,
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -127,16 +127,18 @@ class MyApp extends StatelessWidget {
                       fontSize: 35,
                     ),
                   ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: Colors.white,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Color(0xFF98DBAF),
-                      borderRadius: BorderRadius.circular(15)
+                  GestureDetector(
+                    onTap: (){},
+                    child: Container(
+                      height: 50,
+                      width: 50,
+                      child: Icon(
+                        Icons.arrow_forward,
+                        color: Colors.white,
+                      ),
+                      decoration: BoxDecoration(
+                          color: Color(0xFF98DBAF),
+                          borderRadius: BorderRadius.circular(15)),
                     ),
                   ),
                 ],
