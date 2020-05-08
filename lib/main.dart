@@ -121,7 +121,7 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Text(
-                    "Week's betsellers",
+                    "Week's bestsellers",
                     style: TextStyle(
                       color: Color(0xFF547D62),
                       fontSize: 35,
